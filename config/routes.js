@@ -15,6 +15,9 @@ module.exports.routes = {
   //  ╚╩╝╚═╝╚═╝╩  ╩ ╩╚═╝╚═╝╚═╝
   'GET /':                   { action: 'view-homepage-or-redirect' },
   'GET /welcome/:unused?':   { action: 'dashboard/view-welcome' },
+  'GET /tareas':             { action: 'tareas/view-tareas-view' }, 
+  'GET /tareas-new':         { action: 'tareas/view-create-tareas' }, 
+
 
   'GET /faq':                { action:   'view-faq' },
   'GET /legal/terms':        { action:   'legal/view-terms' },
@@ -61,5 +64,12 @@ module.exports.routes = {
   'POST  /api/v1/entrance/send-password-recovery-email': { action: 'entrance/send-password-recovery-email' },
   'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
+   
+'post /task': 'taskController.create',
+'get /task-view/index': 'taskController.show',
+
+/*'post /task/update/:taskId': 'taskController.edit',
+'get /task/delete/:taskId': 'taskController.delete',*/
+ 
 
 };

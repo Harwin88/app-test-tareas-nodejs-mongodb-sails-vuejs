@@ -1,11 +1,10 @@
+
 module.exports = {
 
+  friendlyName: 'Deliver tareas',
 
-  friendlyName: 'Deliver contact form message',
 
-
-  description: 'Deliver a contact form message to the appropriate internal channel(s).',
-
+  description: 'Deliver a tareas to the appropriate internal channel(s).',
 
   inputs: {
 
@@ -62,7 +61,7 @@ your custom config -- usually in \`config/custom.js\`, \`config/staging.js\`,
 
     await sails.helpers.sendTemplateEmail.with({
       to: sails.config.custom.internalEmailAddress,
-      subject: 'New contact form message',
+      subject: 'New tareas',
       template: 'internal/email-contact-form',
       layout: false,
       templateData: {
@@ -74,6 +73,8 @@ your custom config -- usually in \`config/custom.js\`, \`config/staging.js\`,
     });
 
   }
+
+
 
 
 };
