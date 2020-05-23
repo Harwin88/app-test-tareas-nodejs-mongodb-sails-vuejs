@@ -18,10 +18,10 @@ module.exports = {
 
   fn: async function () {
 
-    // Respond with view.
+    if (this.req.me) {
+      throw {redirect: '/tareas'};
+    }
+
     return {};
-
   }
-
-
 };

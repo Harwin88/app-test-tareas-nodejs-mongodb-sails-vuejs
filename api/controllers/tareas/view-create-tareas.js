@@ -17,7 +17,7 @@ module.exports = {
 
 
   fn: async function () {
-     
+   console.log('estoy a qui jajajaj');
     // Respond with view.
     return {};
 

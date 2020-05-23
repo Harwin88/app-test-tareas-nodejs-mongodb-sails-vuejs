@@ -1,4 +1,3 @@
-
 module.exports = {
 
   friendlyName: 'Deliver tareas',
@@ -7,32 +6,24 @@ module.exports = {
   description: 'Deliver a tareas to the appropriate internal channel(s).',
 
   inputs: {
-
-    emailAddress: {
-      required: true,
-      type: 'string',
-      description: 'optiene el parametro de email.',
-      example: 'hermione@hogwarts.edu'
-    },
-
-    topic: {
-      required: true,
-      type: 'string',
-      description: 'The topic from the contact form.',
-      example: 'I want to buy stuff.'
-    },
-
-    fullName: {
+    
+      nameTarea: {
       required: true,
       type: 'string',
       description: 'The full name of the human sending this message.',
       example: 'Hermione Granger'
     },
 
-    message: {
+    descricion: {
       required: true,
       type: 'string',
       description: 'The custom message, in plain text.'
+    },
+
+    prioridad: {
+      required: true,
+      type: 'number',
+      description: 'prioridad de la tarea.'
     }
 
   },
@@ -41,14 +32,14 @@ module.exports = {
   exits: {
 
     success: {
-      description: 'The message was sent successfully.'
+      viewTemplatePath: 'pages/tareas/tareas-view'
     }
 
   },
 
 
   fn: async function(inputs) {
-
+  console.log('estoy a qui seee');  
     if (!sails.config.custom.internalEmailAddress) {
       throw new Error(
 `Cannot deliver incoming message from contact form because there is no internal
@@ -59,18 +50,7 @@ your custom config -- usually in \`config/custom.js\`, \`config/staging.js\`,
       );
     }
 
-    await sails.helpers.sendTemplateEmail.with({
-      to: sails.config.custom.internalEmailAddress,
-      subject: 'New tareas',
-      template: 'internal/email-contact-form',
-      layout: false,
-      templateData: {
-        contactName: inputs.fullName,
-        contactEmail: inputs.emailAddress,
-        topic: inputs.topic,
-        message: inputs.message
-      }
-    });
+  
 
   }
 

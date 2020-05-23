@@ -7,7 +7,7 @@ parasails.registerPage('create-tareas', {
     syncing: false,
 
     // Form data
-    formData: { /* … */ },
+    formDataTareas: { /* … */ },
 
     // For tracking client-side validation errors in our form.
     // > Has property set to `true` for each invalid property in `formData`.
@@ -48,7 +48,7 @@ parasails.registerPage('create-tareas', {
       // Clear out any pre-existing error messages.
       this.formErrors = {};
 
-      var argins = this.formData;
+      var argins = this.formDataTareas;
 
       // Validate email:
       if(!argins.descricion) {
@@ -56,13 +56,12 @@ parasails.registerPage('create-tareas', {
       }
 
       // Validate name:
-      if(!argins.Prioridad) {
-        this.formErrors.Prioridaderr = true;
+      if(!argins.prioridad) {
+        this.formErrors.prioridad = true;
       }
-
-      // Validate topic:
-      if(!argins.nombreTarea) {
-        this.formErrors.nombreTarea = true;
+  
+      if(!argins.nameTarea) {
+        this.formErrors.nameTarea = true;
       }
 
       // If there were any issues, they've already now been communicated to the user,
