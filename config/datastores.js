@@ -15,10 +15,7 @@
 
 module.exports.datastores = {
 
-  default: {
-    adapter: 'sails-mongo',
-    url: 'mongodb://root@localhost/foo'
-  }
+
   /***************************************************************************
   *                                                                          *
   * Your app's default datastore.                                            *
@@ -36,7 +33,8 @@ module.exports.datastores = {
   ***************************************************************************/
 
   default: {
-
+    adapter: 'sails-mongo',
+    url: 'mongodb://root@localhost/tareas'
     /***************************************************************************
     *                                                                          *
     * Want to use a different database during development?                     *
