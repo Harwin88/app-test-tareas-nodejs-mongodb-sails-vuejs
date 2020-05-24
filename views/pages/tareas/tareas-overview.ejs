@@ -6,9 +6,9 @@
     </div>
     <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
   </div>
-  <a class="btn-primary" href="/tareas-new">Crear Tareas</a>
+  <a class="btn-primary" href="/tareas-new"></a>
   {{text}}<br>
-
+  <button class="btn btn-outline-info ml-2" @click="clickOpenExampleModalButton()">Crear Tareas</button>
   <% for ( i=0; i < resp.length; i++) { %>
     <div class="conten">
     <div class="row">
@@ -19,13 +19,13 @@
       <%= resp[i].descricion %>
      </div>
      <div class="col-4">
-      <%= resp[i].prioridad %>
+     <% {{text=resp[i].prioridad }}%><%= resp[i].prioridad %>
      </div>
     </div>
    </div>
  
   <% } %>
-     
+  
     
 
 </div>

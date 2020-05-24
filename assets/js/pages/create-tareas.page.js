@@ -5,7 +5,8 @@ parasails.registerPage('create-tareas', {
   data: {
     // Main syncing/loading state for this page.
     syncing: false,
-
+    modal: 'example',
+    pageLoadedAt: Date.now(),
     // Form data
     formDataTareas: { /* … */ },
 
@@ -42,7 +43,13 @@ parasails.registerPage('create-tareas', {
       this.cloudSuccess = true;
 
     },
-
+    closeExampleModal: async function() {
+      this.goto('/tareas');
+      // Or, without deep links, instead do:
+      // ```
+      // this.modal = '';
+      // ```
+    },
     handleParsingForm: function() {
 
       // Clear out any pre-existing error messages.
