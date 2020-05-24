@@ -34,9 +34,9 @@ module.exports.custom = {
   *                                                                         *
   **************************************************************************/
   platformCopyrightYear: '2019',
-  platformName:  'NEW_APP_NAME',
-  platformCompanyName: 'NEW_APP_COMPANY_NAME',
-  platformCompanyAboutHref: 'https://sailsjs.com/about',
+  platformName:  'admin Tareas',
+  platformCompanyName: 'click',
+  platformCompanyAboutHref: '',
   privacyPolicyUpdatedAt: 'DATE_PRIVACY_POLICY_LAST_UPDATED',
   termsOfServiceUpdatedAt: 'DATE_TERMS_OF_SERVICE_LAST_UPDATED',
 

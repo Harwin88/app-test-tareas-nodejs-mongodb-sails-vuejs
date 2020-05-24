@@ -15,7 +15,8 @@ module.exports.routes = {
   //  ╚╩╝╚═╝╚═╝╩  ╩ ╩╚═╝╚═╝╚═╝
   'GET /':                   { action: 'view-homepage-or-redirect' },
   'GET /welcome/:unused?':   { action: 'dashboard/view-welcome' },
-  'GET /tareas':             { action: 'tareas/view-tareas-view' }, 
+
+  'GET /tareas':            { action: 'tareas/view-tareas-overview' },
   'GET /tareas-new':         { action: 'tareas/view-create-tareas' }, 
 
 
