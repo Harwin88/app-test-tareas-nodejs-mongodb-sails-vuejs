@@ -1,3 +1,15 @@
+### Informacion general.
+
+El proyecto esta creado con sails framewor de express 
+
+para instalar este proyecto tiene que tener instalado  mongo db y node 10.15.3 o superiores.
+
++ [1- git clone https://github.com/Harwin88/app-test-tareas-nodejs-mongodb-sails-vuejs.git
++ [2- luego ejecuta un (npm install) el adatador de la  base de datos  esta apuntando al local de mongodb.
++ [3- levantar el servicio de mongo db. usando   mongo start.
++ [4- el proyecto tiene usuarios (creacion, modificar perfil, y inicio de session).
++ [5- permite crear tareas y visualizar tareas con sus datos y prioridad (1 a 5 ) siendo 5 la prioridad mas baja.
++ [6- el estoy utilizando less, Vuejs, y ejs para el lado del frontend.
 
 
 # app-test
@@ -14,18 +26,6 @@ a [Sails v1](https://sailsjs.com) application
 + [Professional / enterprise options](https://sailsjs.com/enterprise)
 
 
-### Version info
-
-El proyecto esta creado con sails framewor de express 
-
-para instalar este proyecto tiene que tener instalado  mongo db y node 10.15.3 o superiores.
-
-+ [1- git clone https://github.com/Harwin88/app-test-tareas-nodejs-mongodb-sails-vuejs.git
-+ [2- luego ejecuta un (npm install) el adatador de la  base de datos  esta apuntando al local de mongodb.
-+ [3- levantar el servicio de mongo db. usando   mongo start.
-+ [4- el proyecto tiene usuarios (creacion, modificar perfil, y inicio de session).
-+ [5- permite crear tareas y visualizar tareas con sus datos y prioridad (1 a 5 ) siendo 5 la prioridad mas baja.
-+ [6- el estoy utilizando less, Vuejs, y ejs para el lado del frontend.
 
 
 <!-- Internally, Sails used [`sails-generate@1.17.2`](https://github.com/balderdashy/sails-generate/tree/v1.17.2/lib/core-generators/new). -->
