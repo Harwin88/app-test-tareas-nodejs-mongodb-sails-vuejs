@@ -1,3 +1,5 @@
+
+
 # app-test
 
 a [Sails v1](https://sailsjs.com) application
@@ -14,8 +16,11 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
-This app was originally generated on Sat May 23 2020 01:28:17 GMT-0500 (GMT-05:00) using Sails v1.2.4.
+El proyecto esta creado con sails framewor de express 
 
+para instalar este proyecto tiene que tener instalado  mongo db y node 10.15.3 o superiores.
+
+1- git clone https://github.com/Harwin88/app-test-tareas-nodejs-mongodb-sails-vuejs.git
 <!-- Internally, Sails used [`sails-generate@1.17.2`](https://github.com/balderdashy/sails-generate/tree/v1.17.2/lib/core-generators/new). -->
 
 
